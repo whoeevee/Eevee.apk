@@ -1,4 +1,4 @@
-# Eevee.apk-Client
+# Eevee.apk
 
 I decided to post the source code of the Eevee application on GitHub for fun.
 it still has some native C++ functions, which I used to make it a little harder to decompile the application.
