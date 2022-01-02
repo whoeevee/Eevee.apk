@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Eevee</string>
+    <string name="input_data_textinput">Enter data</string>
+    <string name="input_sig_textinput">Enter signature</string>
+    <string name="activity_title_sig">Check signature</string>
+    <string name="activity_title_description">Fill in the blanks below</string>
+    <string name="check_sig_btn_text">submit</string>
+    <string name="server_response">Server response</string>
+    <string name="im">Important message</string>
+    <string name="loading">loading</string>
+    <string name="not_certified">[ ! ] Device is not certified</string>
+    <string name="unknown">[ ! ] Unknown device</string>
+    <string name="certified">[✓] Device is verified</string>
+    <string name="request_cert">You can request a verification, after which you will be able to use the application without having to enter a signature on this device.</string>
+    <string name="request_cert_btn">Request verification</string>
+    <string name="not_now">Not now</string>
+    <string name="incorrect_sig">Incorrect signature</string>
+    <string name="retry">Retry</string>
+    <string name="no_internet">Connect to the Internet</string>
+    <string name="internet_required">An Internet connection is required to use this application.</string>
+    <string name="chat">Chat</string>
+    <string name="back">&lt; Back</string>
+    <string name="enter_msg">enter message</string>
+    <string name="error">An error occurred</string>
+    <string name="verify">Verify</string>
+    <string name="nick">сome up with nickname</string>
+    <string name="one_more">one more step</string>
+    <string name="wait">Wait for approval</string>
+    <string name="device_already_requested">You have applied for device verification and will only be able to use the chat once it has been approved.</string>
+</resources>

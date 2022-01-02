@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:id="@+id/govno"
+    android:windowDrawsSystemBarBackgrounds="true"
+
+    tools:context=".SignatureTest">
+
+
+    <RelativeLayout
+        android:id="@+id/activityTitleLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+
+        <TextView
+            android:id="@+id/activityTitleText"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:fontFamily="@font/um"
+            android:text="@string/activity_title_sig"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/activityTitleDescription"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityTitleText"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:fontFamily="@font/u"
+            android:text="@string/activity_title_description"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/device"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activityTitleText"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:fontFamily="@font/s"
+            android:text="@string/loading"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dataInputLayout"
+        style="@style/ti"
+        app:boxStrokeColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activityTitleLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/input_data_textinput"
+
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusTopStart= "0dp"
+
+        android:textColorHint="@color/gray"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dataInputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/um"
+            android:shadowColor="@color/black"
+            android:textColor="#FFFFFF"
+            tools:ignore="TextContrastCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sigInputLayout"
+        style="@style/ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dataInputLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+
+        app:boxCornerRadiusBottomEnd="0dp"
+        app:boxCornerRadiusBottomStart="0dp"
+        app:boxCornerRadiusTopEnd="0dp"
+        app:boxCornerRadiusTopStart= "0dp"
+
+        android:layout_marginEnd="20dp"
+        android:hint="@string/input_sig_textinput"
+        android:textColorHint="@color/gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sigInputText"
+            android:textColor="@color/white"
+            app:hintTextAppearance="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray"
+            android:fontFamily="@font/um"
+            tools:ignore="TextContrastCheck" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/SIGVerifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sigInputLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/gb"
+        android:onClick="startSIGVerify"
+        android:padding="12dp"
+        android:text="@string/check_sig_btn_text"
+
+        android:textColor="@color/white"
+
+        app:cornerRadius="0dp"
+
+        app:rippleColor="@android:color/transparent"
+
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp"
+
+
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/chatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SIGVerifyButton"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/gb"
+        android:onClick="openChat"
+        android:padding="12dp"
+        android:text="@string/chat"
+
+        android:textColor="@color/white"
+
+        app:cornerRadius="0dp"
+
+        app:rippleColor="@android:color/transparent"
+
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="3dp"
+
+
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+</RelativeLayout>

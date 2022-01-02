@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+        applicationId "com.eevee"
+        minSdk 26
+        targetSdk 31
+        versionCode 3
+        versionName "3.1"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            version '3.10.2'
+
+        }
+    }
+
+}
+
+dependencies {
+
+        implementation 'com.gmail.samehadar:iosdialog:1.0'
+        implementation 'androidx.core:core-ktx:1.7.0'
+        implementation 'androidx.appcompat:appcompat:1.4.0'
+        implementation 'com.google.android.material:material:1.4.0'
+        implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
+        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+
+        /**
+         * COROUTINES
+         */
+
+        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2"
+        implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+        implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
+
+        /**
+         * WEB
+         */
+
+        implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+
+    }

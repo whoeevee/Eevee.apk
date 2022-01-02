@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">Eevee</string>
+    <string name="input_data_textinput">введите данные</string>
+    <string name="input_sig_textinput">введите подпись</string>
+    <string name="activity_title_sig">проверка подписи</string>
+    <string name="activity_title_description">заполните пропуски</string>
+    <string name="check_sig_btn_text">отправить</string>
+    <string name="server_response">ответ сервера</string>
+    <string name="im">Важное сообщение</string>
+    <string name="loading">подождите</string>
+    <string name="not_certified">[ ! ] Устройство не верифицировано</string>
+    <string name="unknown">[ ! ] Неизвестное устройство</string>
+    <string name="certified">[✓] Устройство верифицировано</string>
+    <string name="request_cert">Запросить верификацию? После подтверждения Вы сможете пользоваться чатом и приложением без необходимости ввода подписи на этом устройстве.</string>
+    <string name="request_cert_btn">Запросить верификацию</string>
+    <string name="not_now">Не сейчас</string>
+    <string name="incorrect_sig">Подпись неверна</string>
+    <string name="retry">Повторить</string>
+    <string name="no_internet">Connect to the Internet</string>
+    <string name="internet_required">Для использования этого приложения требуется подключение к интернету.</string>
+    <string name="chat">Чат</string>
+    <string name="back">&lt; Назад</string>
+    <string name="enter_msg">введите сообщение</string>
+    <string name="error">Произошла ошибка</string>
+    <string name="verify">Верификация</string>
+    <string name="nick">придумайте ник</string>
+    <string name="one_more">еще один шаг</string>
+    <string name="wait">Подождите одобрения</string>
+    <string name="device_already_requested">Вы подали заявку на верификацию устройства и сможете использовать чат только после её одобрения.</string>
+</resources>
