@@ -16,7 +16,7 @@ import android.widget.TextView;
  *
  * Modified by Eevee, it's better now
  * https://github.com/whoeevee
- * t.me/dxrtxn
+ * t.me/whoeevee
  * on 02/12/21.
  *
  **/

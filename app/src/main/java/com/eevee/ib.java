@@ -7,6 +7,12 @@ import android.graphics.Typeface;
  * http://gdacciaro.com
  * acciarogennaro@gmail.com
  * on 18/02/18.
+ *
+ * Modified by Eevee, it's better now
+ * https://github.com/whoeevee
+ * t.me/whoeevee
+ * on 02/12/21.
+
  */
 
 public class ib {
